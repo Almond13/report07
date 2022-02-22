@@ -49,25 +49,25 @@
                             </ul>
                         </div>
                         <div class="sub-nav" id="sub-nav">
-                            <ul>
+                            <ul class="sub-navli">
                                 <li><a href="#">SubMenu-1</a></li>
                                 <li><a href="#">SubMenu-2</a></li>
                                 <li><a href="#">SubMenu-3</a></li>
                                 <li><a href="#">SubMenu-4</a></li>
                             </ul>
-                            <ul>
+                            <ul class="sub-navli">
                                 <li><a href="#">SubMenu-1</a></li>
                                 <li><a href="#">SubMenu-2</a></li>
                                 <li><a href="#">SubMenu-3</a></li>
                                 <li><a href="#">SubMenu-4</a></li>
                             </ul>   
-                            <ul>
+                            <ul class="sub-navli">
                                 <li><a href="#">SubMenu-1</a></li>
                                 <li><a href="#">SubMenu-2</a></li>
                                 <li><a href="#">SubMenu-3</a></li>
                                 <li><a href="#">SubMenu-4</a></li>
                             </ul>   
-                            <ul>
+                            <ul class="sub-navli">
                                 <li><a href="#">SubMenu-1</a></li>
                                 <li><a href="#">SubMenu-2</a></li>
                                 <li><a href="#">SubMenu-3</a></li>
@@ -80,27 +80,22 @@
         </header>
         <section class="sec main-slider">
             <div class="container">
-                <div class="slider">
-                    <ul class="clearfix" id="slider-ul">
-                        <li class="slider-li">
-                            <a href="#">
-                                <picture>
-                                    <img src="./images/slide01.jpg" alt="인터페이스 이미지1">
-                                </picture>
-                            </a>
-                        </li>
-                        <li class="slider-li">
-                                    <img src="./images/slide02.jpg" alt="인터페이스 이미지2">
-                            </a>
-                        </li>
-                        <li class="slider-li">
-                            <a href="#">
-                                <picture>
-                                    <img src="./images/slide03.jpg" alt="인터페이스 이미지3">
-                                </picture>
-                            </a>
-                        </li>
-                    </ul>                  
+                <div class="slider clearfix">
+                    <div class="sliderlist active">
+                        <a href="#">
+                            <img src="./images/slide01.jpg" alt="인터페이스 이미지1">
+                        </a>
+                    </div>
+                    <div class="sliderlist">
+                        <a href="#">
+                            <img src="./images/slide02.jpg" alt="인터페이스 이미지2">
+                        </a>
+                    </div> 
+                    <div class="sliderlist">
+                        <a href="#">
+                            <img src="./images/slide03.jpg" alt="인터페이스 이미지3">
+                        </a>   
+                    </div>                
                 </div>
             </div>
         </section>
@@ -169,18 +164,21 @@
                     <span>Copyright : 서승연</span>
                 </div>
                 <div class="family-site">
+                    <span>패밀리 사이트</span>
                     <ul class="family-list">
                         <li><a href="#">사이트1</a></li>
                         <li><a href="#">사이트2</a></li>
                         <li><a href="#">사이트3</a></li>
-                    </ul>
-                    <span>패밀리 사이트</span>
+                    </ul>                    
                 </div>
             </div>
         </footer>
     </div>
 
-    <!-- defalt js -->
+    <!-- js list -->
     <script src="./js/defalt.js"></script>
+    <script src="./js/nav.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/fam.js"></script>
 </body>
 </html>

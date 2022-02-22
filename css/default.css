@@ -60,17 +60,20 @@
         }
         .main-nav li{
             border: 1px solid #000;
+            padding:10px 70px;
+        }
+        .main-nav li:hover{
+            background-color: #333;
+            color: #fff;
         }
         .main-nav>ul,.sub-nav>ul{            
             display: flex;
             flex-flow: row wrap;          
         }
-        .main-nav > ul >li{
-            padding:10px 70px;
-        }
         .sub-nav{
+            display: none;
+            display: flex;
             position: absolute;
-            padding: 0;
         }
         .sub-nav ul{
             background-color: #333;
@@ -80,20 +83,30 @@
         .sub-nav li{
             padding: 0 60px;
         }
+        .sub-nav li:hover{
+            background-color: #fff;
+            color: #000;
+        }
 
         /* 슬라이더 */
         .slider{
             height: 300px;
-            overflow: hidden;
-            padding-left: 0;
-        }
-        .slider ul{
             position: relative;
+        }
+        .slider .sliderlist{
+            position: absolute;
+            left:0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: 0.5s;
+        }
+        .sliderlist img{
             height: 100%;
         }
-        .slider img{
-            position: absolute;
-            height: 300px;
+        .sliderlist.active{
+            opacity: 1;
         }
 
         /* 공지,갤러리,배너 */
@@ -156,15 +169,30 @@
             align-items: center;
             border-top: 1px solid #333;
         }
-        .copyright{
-            width: 300px;
+        .copyright,.footer .family-site span{
             text-align: center;
             font-weight: 700;
+            font-size: 20px;
         }
-        .family-site span{
+        .copyright{
+            width: 300px;
+        }
+        .footer .family-site{
             position: relative;
+            width: 15%;
         }
-        .family-list {
+        .footer .family-list{
             position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 100%;
+            border: 1px solid #777;
             display: none;
+            text-align: center;
+            background-color: #777;
+            color: #fff;
+        }
+        .footer .family-list li:hover{
+            background-color: #fff;
+            color: #000
         }
