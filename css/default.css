@@ -14,6 +14,7 @@
             display: block;
         }
 
+        /* popup */
         .popup-modal{
             position:fixed;
             left:0;
@@ -23,7 +24,7 @@
             z-index:10001;
             display: none;
         }
-        .popup{
+        .pop-inner{
             position:fixed;
             left:50%;
             top:50%;
@@ -34,9 +35,6 @@
             border-radius:1px;
             background-color:#fff;
         }
-        .popup-text{
-            margin-bottom: 70px;
-        }
         .popup-modal span{
             padding: 0 0 10px 10px;
             border-bottom: 1px solid #000;
@@ -45,10 +43,24 @@
         }
         .popup-modal p{
             margin: 30px 10px;
+            padding-bottom: 70px;
+        }
+        #popup-modal-gal00 .img-box{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            align-items: center;
+            justify-items: center;
+            
+        }
+        .popup-modal-gal img,#popup-modal-gal{
+            width: 90%;
+            height: 90%;
+            margin: 10px auto;
         }
         .btn-close{
             margin-left: 85%;
         }
+
         /* header */
         .header .inner{
             height: 100px;
@@ -56,6 +68,10 @@
             justify-content: space-between;
             align-items: flex-end;
             border-bottom: 1px solid #333;
+        }
+        .notice-gallery-banner h3,.main-nav li{
+            font-weight: 700;
+            font-size: 20px;
         }
         .main-nav{
             position: relative;
@@ -73,24 +89,27 @@
             flex-flow: row wrap;          
         }
         .sub-nav{
-            display: none;
             display: flex;
             position: absolute;
+            background-color: #333;  
         }
         .sub-nav ul{
+            display: none;
             background-color: #333;
             color: #fff;
             z-index: 100;
         }
         .sub-nav li{
-            padding: 0 60px;
+            padding: 5px 63.5px;
+            font-weight: 300;
+            font-size: 18px;
         }
         .sub-nav li:hover{
             background-color: #fff;
             color: #000;
         }
 
-        /* 슬라이더 */
+        /* slide */
         .slider{
             height: 300px;
             position: relative;
@@ -122,7 +141,7 @@
             to {opacity: 1}
             }
 
-        /* 공지,갤러리,배너 */
+        /* notice,gallery,banner */
         .notice-gallery-banner{
             height: 200px;
         }
@@ -185,7 +204,7 @@
         .copyright,.footer .family-site span{
             text-align: center;
             font-weight: 700;
-            font-size: 20px;
+            font-size: 24px;
         }
         .copyright{
             width: 300px;

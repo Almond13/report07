@@ -4,7 +4,7 @@ let _subNav = document.querySelector('.sub-nav');
         
         _mainNav.onmouseenter = function(){
             for(let idx=0; idx<_subNavli.length; idx++){
-                _subNavli[idx].style.display = '';
+                _subNavli[idx].style.display = 'block';
             }
         }
         _mainNav.onmouseleave = function(){
@@ -14,7 +14,7 @@ let _subNav = document.querySelector('.sub-nav');
         }
         _subNav.onmouseenter = function(){
             for(let idx=0; idx<_subNavli.length; idx++){
-                _subNavli[idx].style.display = '';
+                _subNavli[idx].style.display = 'block';
             }
         }
         _subNav.onmouseleave = function(){
